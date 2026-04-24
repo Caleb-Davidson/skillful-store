@@ -4,6 +4,7 @@ description: Create new custom commands following OpenCode documentation. Use wh
 license: MIT
 compatibility: opencode
 metadata:
+  targets: [opencode]
   audience: developers
   domain: opencode
   platform: universal

@@ -4,6 +4,7 @@ description: Create new agent skills following OpenCode documentation. Use when 
 license: MIT
 compatibility: opencode
 metadata:
+  targets: [opencode]
   audience: developers
   domain: opencode
   platform: universal
