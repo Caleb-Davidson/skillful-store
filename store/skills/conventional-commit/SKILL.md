@@ -2,7 +2,6 @@
 name: conventional-commit
 description: Analyzes staged changes and session intent to generate and execute high-quality Conventional Commit messages
 license: MIT
-compatibility: opencode
 metadata:
   audience: developers
   domain: git

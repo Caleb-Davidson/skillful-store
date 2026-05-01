@@ -1,7 +1,6 @@
 ---
 name: create-store-agent
 description: Guided process to create a new agent entry in the skillful store
-compatibility: opencode
 targets: [opencode]
 metadata:
   audience: developers

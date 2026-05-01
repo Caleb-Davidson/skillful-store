@@ -1,7 +1,6 @@
 ---
 name: create-store-skill
 description: Guided process to create a new skill entry in the skillful store
-compatibility: opencode
 targets: [opencode]
 metadata:
   audience: developers

@@ -1,7 +1,6 @@
 ---
 name: create-store-command
 description: Guided process to create a new command entry in the skillful store
-compatibility: opencode
 targets: [opencode]
 metadata:
   audience: developers

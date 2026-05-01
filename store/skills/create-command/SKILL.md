@@ -2,9 +2,8 @@
 name: create-command
 description: Create new custom commands following OpenCode documentation. Use when you need to create a command markdown file that users invoke with /<command-name>.
 license: MIT
-compatibility: opencode
+targets: [opencode]
 metadata:
-  targets: [opencode]
   audience: developers
   domain: opencode
   platform: universal

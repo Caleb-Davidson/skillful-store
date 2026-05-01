@@ -1,7 +1,6 @@
 ---
 name: create-store-provider
 description: Guided process to create a new provider entry in the skillful store
-compatibility: opencode
 targets: [opencode]
 metadata:
   audience: developers

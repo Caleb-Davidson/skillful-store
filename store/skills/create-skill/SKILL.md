@@ -2,9 +2,8 @@
 name: create-skill
 description: Create new agent skills following OpenCode documentation. Use when you need to create, write, or scaffold a SKILL.md file with proper structure.
 license: MIT
-compatibility: opencode
+targets: [opencode]
 metadata:
-  targets: [opencode]
   audience: developers
   domain: opencode
   platform: universal

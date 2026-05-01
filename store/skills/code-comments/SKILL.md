@@ -2,7 +2,6 @@
 name: code-comments
 description: Add and maintain high-quality code documentation for public APIs and complex logic
 license: MIT
-compatibility: opencode
 metadata:
   audience: developers
   domain: code-quality
