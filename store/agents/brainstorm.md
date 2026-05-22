@@ -1,4 +1,5 @@
 ---
+name: brainstorm
 description: A brainstorming partner who helps developers explore diverse options and analyze trade-offs.
 mode: all
 temperature: 0.7

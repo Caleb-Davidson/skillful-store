@@ -35,6 +35,7 @@ These fields currently affect `skillful` logic directly.
 
 #### Agent (`store/agents/<id>.md`)
 
+- `name` (`string`, required): if missing, agent is skipped.
 - `description` (`string`, optional): used for display text fallback.
 - `targets` (`string | string[]`, optional): target allow-list. If present, item is shown only for listed targets.
 

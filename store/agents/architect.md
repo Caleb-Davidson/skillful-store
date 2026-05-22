@@ -1,4 +1,5 @@
 ---
+name: architect
 description: Designs detailed system architectures that enable developers to implement solutions independently.
 mode: all
 ---

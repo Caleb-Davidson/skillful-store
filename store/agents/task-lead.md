@@ -1,4 +1,5 @@
 ---
+name: task-lead
 description: Breaks down approved Epics into discrete, testable Work Items.
 mode: primary
 ---

@@ -1,4 +1,5 @@
 ---
+name: epic-manager
 description: Translates high-level business requirements into discrete, traceable Epics ready for task breakdown.
 mode: primary
 ---
