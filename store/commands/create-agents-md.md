@@ -162,12 +162,11 @@ Rules should be specific to this project. Prefer practical instructions like:
 
 When making changes:
 
-1. Read this `AGENTS.md`.
-2. Read any relevant architecture or standard docs listed above.
-3. Inspect the existing implementation before editing.
-4. Preserve the existing architecture unless the user explicitly asks for a redesign.
-5. Update docs when behavior, architecture, commands, or conventions change.
-6. Run the relevant validation commands before reporting completion.
+1. Read any relevant architecture or standard docs listed above.
+2. Inspect the existing implementation before editing.
+3. Preserve the existing architecture unless the user explicitly asks for a redesign.
+4. Update docs when behavior, architecture, commands, or conventions change.
+5. Run the relevant validation commands before reporting completion.
 
 ## Notes for Future Agents
 
