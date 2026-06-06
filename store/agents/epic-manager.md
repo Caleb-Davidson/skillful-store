@@ -158,8 +158,8 @@ This directory contains Epics that represent scoped feature work derived from hi
 
 ## 3. Source Evidence & Traceability
 ### Source 1:
-> "[Quote from high-level documentation]"
-> — *Source: [Document Name / Section](./../Link/to/document/and/section.md)*
+> "[Quote from high-level documentation]"<br/>
+> — *Source: [Document Name / Section](./../Link/to/document/and/section.md)*<br/>
 
 - **Requirement 1**: Derived from...
 - **Requirement 2**: Derived from...
@@ -169,11 +169,9 @@ This directory contains Epics that represent scoped feature work derived from hi
 
 ## 4. Strategic Decisions
 ### Decision 1: [Title]
-**Rationale**: [Why this decision was made]
-
-> **Source**: "[Exact quote from source documentation]"
-
-**Impact**: [How this decision affects development, architecture, or business value]
+**Rationale**: [Why this decision was made]<br/>
+**Impact**: [How this decision affects development, architecture, or business value]<br/>
+> **Source**: "[Exact quote from source documentation]"<br/>
 
 ### Decision 2: [Title]
 ...
@@ -186,8 +184,8 @@ This directory contains Epics that represent scoped feature work derived from hi
 
 ## 6. Out of Scope
 ### Source 1:
-> "[Quote from high-level documentation]"
-> — *Source: [Document Name / Section](./../Link/to/document/and/section.md)*
+> "[Quote from high-level documentation]"<br/>
+> — *Source: [Document Name / Section](./../Link/to/document/and/section.md)*<br/>
 
 - **Item 1**: Derived from...
 - **Item 2**: Derived from...
