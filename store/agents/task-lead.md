@@ -139,16 +139,16 @@ Phase 3: For each Task:
 ### Template: Task Markdown File
 ```markdown
 # Task-XXX: Task Name
-**Parent Epic**: [Epic-XXX: Epic Name](./INDEX.md)
-**Status**: [Backlog | In-Progress | Done]
+**Parent Epic**: [Epic-XXX: Epic Name](./INDEX.md)<br/>
+**Status**: [Backlog | In-Progress | Done]<br/>
 
 > One-sentence summary of what this task delivers.
 
 ## 1. Context & Traceability
 **Strategic Decision**: [Link to the specific Decision Header in the parent Epic INDEX.md]
 
-> **Source Quote**: "[Quote from Epic or High-Level Doc that drives this task]"
-> — *Source: [Document Name](../Link/to/doc.md)*
+> **Source Quote**: "[Quote from Epic or High-Level Doc that drives this task]"<br/>
+> — *Source: [Document Name](../Link/to/doc.md)*<br/>
 
 ## 2. Description
 [Detailed explanation of what needs to be built. Focus on the "What" and "Why" at the implementation level.]
