@@ -28,6 +28,7 @@ Before adding or changing anything, review all existing comments in the file:
 - **DELETE** comments referencing code that no longer exists
 - **REWRITE** comments that describe outdated behavior
 - **REMOVE** trivial comments (e.g., `// Class1`, `// TODO: Add summary`, `// Gets the value`)
+- **REMOVE** changelog-in-disguise and justification-log comments (historical narration, negative assertions about unexpected behavior, catalogued reasoning) — see Phase 4 Avoid list for detail and examples
 - **KEEP** comments that provide genuine context or explain non-obvious decisions
 
 ### Phase 3: Document Public Surfaces
@@ -65,6 +66,9 @@ For each member, answer these questions in your documentation:
 - Restating what the code does (e.g., `// Saves the file` above `SaveAsync()`)
 - Generic fillers (`// The name`, `// Gets the value`)
 - Type-only descriptions (`// The user ID (int)`)
+- Changelog in disguise: narrating what the code used to do or how it changed (`// now does X`, `// no longer special-cased`). Describe only the present.
+- Negative assertions about behavior the reader wasn't expecting (`// not special-cased`, `// rather than X`) — they only make sense if you know the history. Omit them.
+- Justification logs: cataloguing the reasoning behind the code rather than stating the single non-obvious *why*.
 
 ### Phase 5: Inline Comments
 Use sparingly and only when code cannot be made self-explanatory:
