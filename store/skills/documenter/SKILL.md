@@ -26,7 +26,9 @@ project and then keeps it up to date. What lands in a target project:
 
 - `docs/index.html` + `docs/assets/` — a static, browser-viewable docs shell
   (vendored `markdown-it` / `dompurify` / `js-yaml`, no build step, no server).
-- `docs/index.md` — the navigation manifest the user curates.
+- `docs/index.md` — the navigation manifest the user curates. Its frontmatter
+  `title` drives the shell's sidebar heading (defaults to "Project
+  Documentation"; set it up front with `init --title`).
 - Three governing docs (`documentation-architecture.md`,
   `documentation-md-contract.md`, `documentation-style-guide.md`) and seven
   copyable page templates under `docs/templates/`.
@@ -51,11 +53,20 @@ it at another project.
 
 | Command | What it does | When to use |
 |---|---|---|
-| `documenter init` | Scaffolds `docs/`, writes `.documenter.json`, adds the `docs:lint` script (creating a minimal `package.json` if none exists). Skips files that already exist. | Bootstrapping docs in a project for the first time. |
+| `documenter init` | Scaffolds `docs/`, writes `.documenter.json`, adds the `docs:lint` script (creating a minimal `package.json` if none exists). Skips files that already exist. Takes `--title` to set the docs site title. | Bootstrapping docs in a project for the first time. |
 | `documenter update` | Refreshes the platform files (the docs shell, assets, templates, governing docs) to the CLI's current version, skipping any file the user has modified. | Pulling in documenter improvements after the CLI itself is upgraded. |
 | `documenter lint` | Runs documenter's internal linter against the project's `docs/`, validating each page against the Markdown contract. | Verifying docs structure; also wired as `npm run docs:lint`. |
 
 Shared flags: `--cwd <path>` (all commands) and `--force` (`init`/`update`).
+
+`init` also takes `--title <text>` to set the docs site title (the sidebar
+heading), e.g. `documenter init --title "My Project Docs"`. If you omit it, the
+title defaults to "Project Documentation" and `init` reminds you to set it. You
+can pass any text, including titles with punctuation like colons.
+
+To change the title later, edit the `title` field in `docs/index.md`. Rerunning
+`init --title` won't do it — `init` never touches an existing `docs/index.md`.
+Once set, `documenter update` preserves your title and won't overwrite it.
 
 ## Why `update` is safe (the drift model)
 
@@ -76,7 +87,8 @@ the record that makes drift detection work across machines and over time.
 
 ## Typical workflow in a target project
 
-1. `documenter init`
+1. `documenter init --title "My Project Docs"` (the title becomes the sidebar
+   heading; omit `--title` to set it later in `docs/index.md` frontmatter).
 2. Curate `docs/index.md` so the nav lists the pages that matter.
 3. Author pages by copying from `docs/templates/`, following the rules in
    `docs/documentation-md-contract.md`.
