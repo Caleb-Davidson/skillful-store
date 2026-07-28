@@ -1,0 +1,15 @@
+# Normalize all text files to LF in the repository and on checkout, so the
+# content skillful ships installs with LF regardless of the consumer's
+# core.autocrlf. skillful copies these files verbatim into target repos, so the
+# checked-out line endings here become the installed line endings there.
+* text=auto eol=lf
+
+# Binary assets a skill might vendor — never normalize.
+*.png binary
+*.gif binary
+*.ico binary
+*.icns binary
+*.woff binary
+*.woff2 binary
+*.jpg binary
+*.jpeg binary
