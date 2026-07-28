@@ -11,6 +11,7 @@ Guidance for contributors editing this store repository.
   - `store/skills/<name>/SKILL.md`
   - `store/providers/*.json`
   - `store/mcps/*.json`
+  - `store/includes/*.md` — frontmatter-free markdown installed to a project root as `<id>.md`, for `@`-including from `AGENTS.md`
 
 ## Conventions
 
@@ -25,7 +26,7 @@ Guidance for contributors editing this store repository.
 
 Item identity is based on `(type, id)` and source priority determines winners on collisions.
 
-- `type` comes from folder category (`agents`, `commands`, `skills`, `providers`, `mcps`).
+- `type` comes from folder category (`agents`, `commands`, `skills`, `providers`, `mcps`, `includes`).
 - `id` comes from filename/folder naming conventions.
 - Frontmatter does not override identity.
 
@@ -57,6 +58,12 @@ These fields currently affect `skillful` logic directly.
 #### MCP (`store/mcps/<id>.json`)
 
 - `_meta.description` (`string`, required): if missing, MCP item is skipped.
+
+#### Include (`store/includes/<id>.md`)
+
+- **No frontmatter.** These files are `@`-included verbatim into a project's `AGENTS.md`, so any YAML would leak into that context. Keep them plain markdown.
+- `description` is derived from the file's first heading (falling back to the first non-empty line), so lead with a clear heading.
+- `id` is the filename without `.md`; there is no `targets` key (includes are Claude-Code-only and project-scoped by capability).
 
 ### Target allow-list (`targets`)
 
