@@ -1,5 +1,3 @@
-## Agent Workflow
-
 The shared task lifecycle for this repo. Every command this references (the work tracker, the gate,
 dev servers) is defined in `AGENTS.md` → **Commands** — run *those*, whatever they are for this repo.
 Any steps unique to this repo (regenerating artifacts, dogfooding, smoke-tests) are listed in
