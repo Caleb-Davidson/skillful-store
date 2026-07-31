@@ -11,8 +11,9 @@ backlog is separate — that is the tracker's list command (named in `AGENTS.md`
 every session already runs at step 1.
 
 The repo-specific facts this skill needs — the **repo slug** (`owner/name`), the **area labels**, the
-**canonical taxonomy source**, and the **tracker commands** — all live in `AGENTS.md`. Read them there;
-this skill is the procedure, `AGENTS.md` is the parameters.
+**canonical taxonomy source**, and the **tracker commands** — live with the repo, not here: in
+`AGENTS.md`, or in the repo's own project-context skill. Read them there; this skill is the procedure
+and the repo supplies the parameters.
 
 Two companions own the pieces this skill does not:
 
@@ -30,19 +31,21 @@ The canonical source (see above) governs; this is the cheat-sheet:
   (committed work waiting on named blocker issues), which outranks `someday` (deferred / maybe). An
   issue with **none** is the default: the active **next** queue. Never add a `next` label; "next" is
   the absence of the others.
-- **Area** — which part of the codebase the work touches. **The concrete area labels are listed in
-  `AGENTS.md`** (they differ per repo). Apply every area that genuinely applies; multi-label is
-  expected. A cross-cutting umbrella that fits no single area carries no area label.
+- **Area** — which part of the codebase the work touches. **The concrete area labels are repo-specific**;
+  find them in `AGENTS.md` or the repo's project-context skill. Apply every area that genuinely applies;
+  multi-label is expected, and **every issue carries at least one**. A cross-cutting umbrella carries
+  every area it spans rather than none, so no issue is invisible to an area filter.
 
-No priority scale, no type labels (`bug`/`chore`) yet — add `bug` the day the first real bug appears,
-not before.
+No priority scale. Keep the type axis empty until it earns its place — add `bug` the day the first real
+bug appears, not before.
 
 ## Authoring a new issue — the checklist
 
 Walk these in order. Steps 2 and 4 are the ones to do **with the user**, not guess.
 
-1. **Area labels.** Decide which part(s) of the codebase the work touches, from the set in `AGENTS.md`.
-   Cross-cutting → multiple; a phase umbrella that fits no area → none.
+1. **Area labels.** Decide which part(s) of the codebase the work touches, from the repo's own set (see
+   above). Every issue takes at least one: cross-cutting → multiple; a phase umbrella → every area it
+   spans.
 2. **Tier — ask, don't assume.** Is this actionable soon (**next**, no status label) or deferred
    (**someday**)? When it is not obvious, ask the user rather than defaulting silently.
 3. **Draft title + body.**
