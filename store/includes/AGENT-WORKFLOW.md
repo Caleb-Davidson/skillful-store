@@ -7,6 +7,9 @@ Any steps unique to this repo (regenerating artifacts, dogfooding, smoke-tests) 
    grouped In Progress / Next / Blocked / Someday. Use the tracker's `details <n>` to read one in full
    and its `claim <n>` to claim it (adds the `in-progress` label). Create or triage items with the
    `issue-triage` skill. Put `Fixes #<n>` in the PR description so the issue closes when it merges.
+   A finding surfaced by a PR's own review pass — reviewer feedback, or a fix the user directs inline
+   — is addressed with new commits on that same branch, not a new tracker issue; file one only if the
+   user asks for it or the finding is explicit follow-up work out of scope for the current PR.
 2. **Read the orienting docs and the code before editing.** Start from `AGENTS.md` → Architecture Hub
    and read the architecture/requirements docs relevant to what you're touching. Inspect the existing
    implementation before changing it.
